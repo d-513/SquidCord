@@ -1,6 +1,6 @@
 const Discord = require("./Discord");
 exports.server = (serv) => {
-  const settings = serv.plugins.SquidCord.settings;
+  const settings = serv.plugins.squidcord.settings;
   require("./thrower").checkConfig(settings, serv);
   Discord.login(settings.token);
   Discord.setGuild(settings.guild);
