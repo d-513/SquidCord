@@ -4,12 +4,12 @@ A [flying-squid](https://github.com/PrismarineJS/flying-squid) plugin to connect
 
 ## Installation
 
-Install with npm: `npm i SquidCord`  
+Install with npm: `npm i squidcord`  
 Then add it to your flying-squid config:
 
 ```json
 "plugins": {
-    "SquidCord": {
+    "squidcord": {
       "channel": "CHANNEL-ID",
       "token": "DISCORD-BOT-TOKEN",
       "guild": "GUILD-ID"
