@@ -7,9 +7,13 @@
     "flying-squid",
     "flying-squid discord"
   ],
-  "author": "",
+  "author": "dada513",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.1.1"
+  },
+  "homepage": "https://github.com/dada513/SquidCord",
+  "bugs": {
+    "url": "https://github.com/dada513/SquidCord/issues"
   }
 }
