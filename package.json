@@ -1,0 +1,13 @@
+{
+  "name": "SquidCord",
+  "version": "1.0.0",
+  "description": "A flying-squid plugin to integrate your server with discord",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
