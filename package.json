@@ -1,6 +1,6 @@
 {
   "name": "squidcord",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A flying-squid plugin to integrate your server with discord",
   "main": "index.js",
   "keywords": [
