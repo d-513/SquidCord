@@ -17,8 +17,10 @@ Then add it to your flying-squid config:
 }
 ```
 
-`channel` - the id of the discord channel
-`guild` - the id of the discord server
+`channel` - the id of the discord channel.
+
+`guild` - the id of the discord server.
+
 `token` - bot token from https://discordapp.com/developers/applications
 
 Problems with setting up the bot? https://www.writebots.com/discord-bot-token/  
