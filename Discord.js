@@ -28,7 +28,7 @@ exports.setChatHandler = (cb) => {
     }
   });
 };
-exports.playerJoined = (player) => {
+exports.playerJoined = (player, { online, max }) => {
   const g = client.guilds.cache.get(guild);
   const c = g.channels.cache.get(channel);
   const embed = new Discord.MessageEmbed()
@@ -38,8 +38,9 @@ exports.playerJoined = (player) => {
     )
     .setColor("GREEN");
   c.send(embed);
+  c.setTopic(`Online: ${online}/${max}`);
 };
-exports.playerLeft = (player) => {
+exports.playerLeft = (player, { online, max }) => {
   const g = client.guilds.cache.get(guild);
   const c = g.channels.cache.get(channel);
   const embed = new Discord.MessageEmbed()
@@ -49,4 +50,5 @@ exports.playerLeft = (player) => {
     )
     .setColor("RED");
   c.send(embed);
+  c.setTopic(`Online: ${online}/${max}`);
 };
