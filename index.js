@@ -6,7 +6,12 @@ exports.server = (serv) => {
   Discord.login(settings.token);
   Discord.setGuild(settings.guild);
   Discord.setChannel(settings.channel);
-  if(settings.serverMessage===null){
+  if(("discordMessageColor" in settings)) {
+    Discord.setDiscordMessageColor(settings.discordMessageColor);
+  } else {
+    Discord.setDiscordMessageColor("BLUE");
+  };
+  if(!("serverMessage" in settings)){
     syntax = "§b[Discord] §7${message.author.tag}§f: §7${message.content}"
   } else if (settings.serverMessage.contains("{name}")==true || settings.serverMessage.contains("{message}")==true){
     syntax = settings.serverMessage.replace("&", "§");
