@@ -4,16 +4,11 @@ const minotar = (user) => `https://minotar.net/avatar/${user}`;
 
 let channel;
 let guild;
-let discordSyntaxColor;
-exports.setGuild = (newGuild) => {
-  guild = newGuild;
-};
-exports.setChannel = (newChannel) => {
-  channel = newChannel;
-};
-exports.setDiscordMessageColor = (newColor) => {
-  discordSyntaxColor = newColor;
-};
+let messageColor;
+exports.setGuild = (newGuild) => (guild = newGuild);
+exports.setChannel = (newChannel) => (channel = newChannel);
+exports.setMessageColor = (newColor) => (messageColor = newColor);
+
 exports.login = (token) => client.login(token);
 exports.client = client;
 exports.broadcast = ({ message }, player) => {
@@ -21,7 +16,7 @@ exports.broadcast = ({ message }, player) => {
   const c = g.channels.cache.get(channel);
   const embed = new Discord.MessageEmbed()
     .setAuthor(player.username, minotar(player.username))
-    .setColor(discordSyntaxColor)
+    .setColor(messageColor)
     .setDescription(message);
   c.send(embed);
 };

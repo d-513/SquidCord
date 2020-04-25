@@ -15,5 +15,8 @@
   "homepage": "https://github.com/dada513/SquidCord",
   "bugs": {
     "url": "https://github.com/dada513/SquidCord/issues"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }
